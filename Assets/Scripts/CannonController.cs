@@ -13,18 +13,18 @@ public class CannonController : MonoBehaviour
     public GameObject Bala;
 
     public Transform PuntoDeDisparo;
- 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+
         float HorizontalRotation = Input.GetAxis("Horizontal");
         float VerticalRotation = Input.GetAxis("Vertical");
 
@@ -34,7 +34,7 @@ public class CannonController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject CreatedBala = Instantiate(Bala, PuntoDeDisparo.position, PuntoDeDisparo.rotation);
-            CreatedBala.GetComponent<Rigidbody>().linearVelocity = PuntoDeDisparo.transform.up * BlastPower;
+            CreatedBala.GetComponent<Rigidbody>().linearVelocity = PuntoDeDisparo.up * BlastPower;
         }
     }
 }
