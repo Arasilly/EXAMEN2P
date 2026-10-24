@@ -3570,9 +3570,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CannonController
   rotationSpeed: 0.2
-  BlastPower: 15
+  BlastPower: 20
   Bala: {fileID: 900430982665557007, guid: 4b4bed16f31dcc645a4c294df7aac348, type: 3}
   PuntoDeDisparo: {fileID: 69608421}
+  efectoDisparo: {fileID: 156365856202152685, guid: f9a0781beebb0f041b66708cdf70e86f, type: 3}
 --- !u!1001 &1912214338
 PrefabInstance:
   m_ObjectHideFlags: 0

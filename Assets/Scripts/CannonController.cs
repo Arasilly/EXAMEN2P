@@ -14,6 +14,8 @@ public class CannonController : MonoBehaviour
 
     public Transform PuntoDeDisparo;
 
+    public GameObject efectoDisparo;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,6 +38,9 @@ public class CannonController : MonoBehaviour
         {
             GameObject CreatedBala = Instantiate(Bala, PuntoDeDisparo.position, PuntoDeDisparo.rotation);
             CreatedBala.GetComponent<Rigidbody>().linearVelocity = PuntoDeDisparo.forward* BlastPower;
+
+            Instantiate(efectoDisparo, PuntoDeDisparo.position, PuntoDeDisparo.rotation);
+
         }
     }
 }
