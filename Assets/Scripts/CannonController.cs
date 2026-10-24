@@ -34,7 +34,7 @@ public class CannonController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject CreatedBala = Instantiate(Bala, PuntoDeDisparo.position, PuntoDeDisparo.rotation);
-            CreatedBala.GetComponent<Rigidbody>().linearVelocity = PuntoDeDisparo.up * BlastPower;
+            CreatedBala.GetComponent<Rigidbody>().linearVelocity = PuntoDeDisparo.forward* BlastPower;
         }
     }
 }
